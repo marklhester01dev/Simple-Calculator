@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="input-container">
+        <label for="result-container"></label>
+        <input type="text" id="result-container" />
+      </div>
+
+      <div class="btn-main-container">
+        <div class="btn-first-layer-container">
+          <button class="btn" data-input="AC">AC</button>
+          <button class="btn" data-input="DEL">DEL</button>
+          <button class="btn" data-input="%">%</button>
+          <button class="btn" data-input="/">/</button>
+          <!-- top -->
+        </div>
+        <div class="btn-second-layer-container">
+          <button class="btn" data-input="7">7</button>
+          <button class="btn" data-input="8">8</button>
+          <button class="btn" data-input="9">9</button>
+          <button class="btn" data-input="*">x</button>
+          <!-- 2nd Layer -->
+        </div>
+
+        <div class="btn-third-layer-container">
+          <button class="btn" data-input="4">4</button>
+          <button class="btn" data-input="5">5</button>
+          <button class="btn" data-input="6">6</button>
+          <button class="btn" data-input="-">-</button>
+          <!-- 3rd Layer -->
+        </div>
+        <div class="btn-fourth-layer-container">
+          <button class="btn" data-input="1">1</button>
+          <button class="btn" data-input="2">2</button>
+          <button class="btn" data-input="3">3</button>
+          <button class="btn" data-input="+">+</button>
+          <!-- 4th Layer -->
+        </div>
+
+        <div class="btn-fifth-layer-container">
+          <button class="btn" data-input1="+" data-input2="-">
+            <sup>+</sup>/<sub>-</sub>
+          </button>
+          <button class="btn" data-input="0">0</button>
+          <button class="btn" data-input=".">.</button>
+          <button class="btn" data-input="=">=</button>
+          <!-- 5th Layer -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
