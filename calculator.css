@@ -1,0 +1,98 @@
+@layer theme, reset, base, components, utilities;
+
+@layer theme {
+  :root {
+    /* Main Colors */
+    --clr-primary-950: oklch(0.16 0.03 255); /* Midnight Blue */
+    --clr-primary-900: oklch(0.22 0.05 252);
+    --clr-primary-800: oklch(0.29 0.07 248);
+    --clr-primary-700: oklch(0.38 0.1 242);
+    --clr-primary-600: oklch(0.48 0.13 235);
+    --clr-primary-500: oklch(0.6 0.16 225); /* Cerulean */
+    --clr-primary-400: oklch(0.7 0.14 220);
+    --clr-primary-300: oklch(0.8 0.1 215);
+    --clr-primary-200: oklch(0.9 0.05 212);
+    --clr-primary-100: oklch(0.97 0.02 210);
+
+    /* Neutral Slate */
+    --clr-neutral-950: oklch(0.14 0.01 260);
+    --clr-neutral-900: oklch(0.2 0.01 260);
+    --clr-neutral-800: oklch(0.28 0.01 260);
+    --clr-neutral-700: oklch(0.36 0.01 260);
+    --clr-neutral-600: oklch(0.48 0.01 260);
+    --clr-neutral-500: oklch(0.6 0.01 260);
+    --clr-neutral-400: oklch(0.72 0.01 260);
+    --clr-neutral-300: oklch(0.82 0.01 260);
+    --clr-neutral-200: oklch(0.9 0.01 260);
+    --clr-neutral-100: oklch(0.97 0.01 260);
+
+    /* Accent */
+    --clr-accent-700: oklch(0.56 0.16 205);
+    --clr-accent-600: oklch(0.64 0.18 200);
+    --clr-accent-500: oklch(0.73 0.18 195);
+    --clr-accent-400: oklch(0.82 0.14 192);
+
+    /* For operators */
+    --clr-warning-700: oklch(0.58 0.17 70);
+    --clr-warning-600: oklch(0.66 0.18 75);
+    --clr-warning-500: oklch(0.76 0.17 82);
+    --clr-warning-400: oklch(0.86 0.12 88);
+
+    /* Error States */
+    --clr-danger-600: oklch(0.62 0.22 28);
+    --clr-danger-500: oklch(0.7 0.2 28);
+
+    /* Success States */
+    --clr-success-600: oklch(0.66 0.17 155);
+    --clr-success-500: oklch(0.74 0.15 155);
+
+    /* Semantic Tokens */
+    --bg: var(--clr-neutral-950);
+    --surface: var(--clr-neutral-900);
+    --surface-hover: var(--clr-neutral-800);
+
+    --display-bg: var(--clr-primary-950);
+
+    --text-primary: var(--clr-neutral-100);
+    --text-secondary: var(--clr-neutral-300);
+    --text-muted: var(--clr-neutral-500);
+
+    --border: var(--clr-neutral-700);
+
+    --button-number: var(--clr-neutral-800);
+    --button-number-hover: var(--clr-neutral-700);
+
+    --button-operator: var(--clr-warning-600);
+    --button-operator-hover: var(--clr-warning-500);
+
+    --button-equals: var(--clr-primary-500);
+    --button-equals-hover: var(--clr-primary-400);
+
+    --button-clear: var(--clr-danger-600);
+    --button-clear-hover: var(--clr-danger-500);
+
+    --focus-ring: var(--clr-accent-500);
+
+    --shadow-sm: 0 2px 6px oklch(0 0 0 / 0.15);
+    --shadow-md: 0 8px 24px oklch(0 0 0 / 0.25);
+  }
+}
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@layer base {
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
