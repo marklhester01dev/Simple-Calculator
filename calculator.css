@@ -96,3 +96,49 @@
     justify-content: center;
   }
 }
+
+@layer components {
+  .inputDisplay{
+    background-color: var(--text-primary);
+  }
+  main{
+    width: min(300px, 100%);
+    background-color: var(--clr-primary-900);
+  }
+}
+
+@layer utilities {
+  .p-4 {
+    padding: 1em;
+  }
+  .p-6{
+    padding: 1.5em;
+  }
+  .rounded-2 {
+    border-radius: 0.5rem;
+  }
+  .rounded-4{
+    border-radius: 1rem;
+  }
+  .border-none {
+    border: none;
+  }
+  .grid {
+    display: grid;
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .w-full{
+    width: 100%;
+  }
+  .my-4{
+    margin-block: 1em;
+  }
+  .g-1-50{
+    gap: 0.3rem;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+}
