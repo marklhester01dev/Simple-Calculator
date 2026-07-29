@@ -8,52 +8,52 @@
     <title>Calculator</title>
   </head>
   <body>
-    <main>
-      <div class="input-container">
+    <main class="p-6 rounded-4">
+      <div class="input-container w-full my-4">
         <label for="result-container"></label>
-        <input type="text" id="result-container" />
+        <input type="text" id="result-container" class="inputDisplay p-4 rounded-2 border-none w-full cursor-pointer"/>
       </div>
 
-      <div class="btn-main-container">
-        <div class="btn-first-layer-container">
-          <button class="btn" data-input="AC">AC</button>
-          <button class="btn" data-input="DEL">DEL</button>
-          <button class="btn" data-input="%">%</button>
-          <button class="btn" data-input="/">/</button>
-          <!-- top -->
-        </div>
-        <div class="btn-second-layer-container">
-          <button class="btn" data-input="7">7</button>
-          <button class="btn" data-input="8">8</button>
-          <button class="btn" data-input="9">9</button>
-          <button class="btn" data-input="*">x</button>
-          <!-- 2nd Layer -->
-        </div>
+      <div class="btn-main-container grid grid-cols-4 g-1-50">
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="AC">
+          AC
+        </button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="DEL">
+          DEL
+        </button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="%">%</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="/">/</button>
+        <!-- top -->
 
-        <div class="btn-third-layer-container">
-          <button class="btn" data-input="4">4</button>
-          <button class="btn" data-input="5">5</button>
-          <button class="btn" data-input="6">6</button>
-          <button class="btn" data-input="-">-</button>
-          <!-- 3rd Layer -->
-        </div>
-        <div class="btn-fourth-layer-container">
-          <button class="btn" data-input="1">1</button>
-          <button class="btn" data-input="2">2</button>
-          <button class="btn" data-input="3">3</button>
-          <button class="btn" data-input="+">+</button>
-          <!-- 4th Layer -->
-        </div>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="7">7</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="8">8</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="9">9</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="*">x</button>
+        <!-- 2nd Layer -->
 
-        <div class="btn-fifth-layer-container">
-          <button class="btn" data-input1="+" data-input2="-">
-            <sup>+</sup>/<sub>-</sub>
-          </button>
-          <button class="btn" data-input="0">0</button>
-          <button class="btn" data-input=".">.</button>
-          <button class="btn" data-input="=">=</button>
-          <!-- 5th Layer -->
-        </div>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="4">4</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="5">5</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="6">6</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="-">-</button>
+        <!-- 3rd Layer -->
+
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="1">1</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="2">2</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="3">3</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="+">+</button>
+        <!-- 4th Layer -->
+
+        <button
+          class="btn p-4 rounded-2 border-none cursor-pointer"
+          data-input1="+"
+          data-input2="-"
+        >
+          <sup>+</sup>/<sub>-</sub>
+        </button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="0">0</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input=".">.</button>
+        <button class="btn p-4 rounded-2 border-none cursor-pointer" data-input="=">=</button>
+        <!-- 5th Layer -->
       </div>
     </main>
   </body>
