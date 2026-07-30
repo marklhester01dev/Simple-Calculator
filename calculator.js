@@ -24,8 +24,6 @@ selectors.mainButtonDiv.addEventListener("click", (event) => {
     } catch {
       currentInput = "Error";
     }
-  } else if (value === "%") {
-    currentInput = "%";
   } else {
     currentInput += value;
   }
